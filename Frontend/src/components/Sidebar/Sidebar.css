@@ -29,6 +29,14 @@
     color: #222222;
     font-weight: 600;
   }
+
+  .user{
+    font-family: "Varela Round", sans-serif;
+  }
+
+  .desc{
+    font-family: "Varela Round", sans-serif;
+  }
   
   .sidebarItem > img {
     margin-top: 15px;

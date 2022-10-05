@@ -9,6 +9,7 @@ export default function Settings() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [description, setDescription] = useState("");
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
@@ -22,6 +23,7 @@ export default function Settings() {
       username,
       email,
       password,
+      description,
     };
     if (file) {
       const data = new FormData();
@@ -81,6 +83,12 @@ export default function Settings() {
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+          />
+          <label>Describe yourself</label>
+          <input
+            type="text"
+            placeholder={user.description}
+            onChange={(e) => setDescription(e.target.value)}
           />
           <button className="settingsSubmit" type="submit">
             Update

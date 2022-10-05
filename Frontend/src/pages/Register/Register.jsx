@@ -7,6 +7,7 @@ export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [description, setDescription] = useState("");
   const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -17,6 +18,7 @@ export default function Register() {
         username,
         email,
         password,
+        description,
       });
       res.data && window.location.replace("/login");
     } catch (err) {
@@ -47,6 +49,13 @@ export default function Register() {
           className="registerInput"
           placeholder="Enter your password..."
           onChange={(e) => setPassword(e.target.value)}
+        />
+        <label>Describe yourself</label>
+        <input
+          type="text"
+          className="registerInput"
+          placeholder="Your short intro..."
+          onChange={(e) => setDescription(e.target.value)}
         />
         <button className="registerButton" type="submit">
           Register
