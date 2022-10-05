@@ -1,0 +1,4 @@
+module.exports = {
+    PORT: 3030,
+    MONGO_URL: "mongodb+srv://ashar:asharrotH01+@cluster0.u3qtt.mongodb.net/blog?retryWrites=true&w=majority",
+}
