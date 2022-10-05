@@ -5,6 +5,7 @@ import Write from "./pages/Write/Write";
 import Settings from "./pages/Settings/Settings";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import About from "./pages/About/About";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
+        <Route path="/about"><About /></Route>
       </Switch>
     </Router>
   );

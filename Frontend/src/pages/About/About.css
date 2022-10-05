@@ -1,0 +1,10 @@
+.about{
+    margin: 40px 40px 40px 40px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.about-description{
+    margin-top: 15px;
+    line-height: 25px;
+    line-break: loose;
+}
